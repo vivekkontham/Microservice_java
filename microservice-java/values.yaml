@@ -1,4 +1,4 @@
 image:
   repository: vivekkontham/helloworld
   pullPolicy: IfNotPresent
-  tag: "v1"
+  tag: "v2"

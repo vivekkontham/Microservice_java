@@ -16,3 +16,8 @@ fileignoreconfig:
 - filename: microservice-java/values.yaml
   checksum: c25891df94264990c47f2557edd58b80e9ae02efb9c30247aa670ad25f6f6d87
 version: ""
+
+fileignoreconfig:
+- filename: output.json
+  checksum: 724feb424f68ed12e5257e901ddab27813f0444902cca321f365b179e9acc93e
+version: ""
