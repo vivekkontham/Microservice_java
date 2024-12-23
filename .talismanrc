@@ -3,3 +3,9 @@ fileignoreconfig:
   checksum: 0adb6126a0d18dd501adffbf69c7405908fe5085014e741ece64bfdd057e6f33
 version: ""
 
+fileignoreconfig:
+- filename: target/surefire-reports/TEST-com.example.demo.MyControllerTests.xml
+  checksum: 27fa1ebbdb1ca27b41e113437855ebef0778cb25494c804b9b72cfb4a990a59e
+- filename: talisman_report/talisman_reports/data/report.json
+  checksum: 2c5cd34a2e6de568e8120ff3e73b113216af1840f5409aa65cafa68c731a63c9
+version: ""
