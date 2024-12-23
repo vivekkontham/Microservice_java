@@ -76,9 +76,17 @@
                         </goals>
                     </execution>
                 </executions>
+                <configuration>
+                    <suppressionFiles>
+                        <suppressionFile>http://example.org/suppression.xml</suppressionFile>
+                        <suppressionFile>project-suppression.xml</suppressionFile>
+                    </suppressionFiles>
+                </configuration>
             </plugin>
         </plugins>
     </build>
 </project>
+
+
 
 
