@@ -1,0 +1,5 @@
+fileignoreconfig:
+- filename: target/surefire-reports/TEST-com.example.demo.MyControllerTests.xml
+  checksum: 0adb6126a0d18dd501adffbf69c7405908fe5085014e741ece64bfdd057e6f33
+version: ""
+
