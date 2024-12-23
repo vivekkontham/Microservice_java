@@ -76,12 +76,12 @@
                         </goals>
                     </execution>
                 </executions>
-                <configuration>
+                <!-- <configuration>
                     <suppressionFiles>
                         <suppressionFile>http://example.org/suppression.xml</suppressionFile>
                         <suppressionFile>project-suppression.xml</suppressionFile>
                     </suppressionFiles>
-                </configuration>
+                </configuration> -->
             </plugin>
         </plugins>
     </build>
