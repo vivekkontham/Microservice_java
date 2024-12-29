@@ -1,0 +1,32 @@
+apiVersion: kyverno.io/v1
+kind: ClusterPolicy
+metadata:
+  name: check-image
+spec:
+  webhookConfiguration:
+    failurePolicy: Fail
+    timeoutSeconds: 30
+  background: false
+  rules:
+    - name: check-image
+      match:
+        any:
+        - resources:
+            kinds:
+              - Pod
+      verifyImages:
+      - imageReferences:
+        - "us-central1-docker.pkg.dev/stable-snowfall-444408-b7/devsecops/*"
+        failureAction: Enforce
+        attestors:
+        - count: 1
+          entries:
+          - keys:
+              publicKeys: |-
+                -----BEGIN PUBLIC KEY-----
+                MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEX1ZW5XhEpQzNBdckdfdP1pDbubVT
+                uEKZCyCPiGTU6BFA7tyG9CektUCTYMUokk9bavTwfD34XzsPoFgLiP+63w==
+                -----END PUBLIC KEY-----              
+              rekor:
+                ignoreTlog: true
+                url: https://rekor.sigstore.dev
