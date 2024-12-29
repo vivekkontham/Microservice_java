@@ -1,0 +1,6 @@
+projectKey=com.example:java-kubernetes
+serverUrl=http://34.93.123.154/sonar
+serverVersion=24.12.0.100206
+dashboardUrl=http://34.93.123.154/sonar/dashboard?id=com.example%3Ajava-kubernetes
+ceTaskId=e3957ee3-8ddc-41a2-897e-840f413fd510
+ceTaskUrl=http://34.93.123.154/sonar/api/ce/task?id=e3957ee3-8ddc-41a2-897e-840f413fd510
