@@ -1,13 +1,12 @@
-<settings>
-    <pluginGroups>
-        <pluginGroup>org.sonarsource.scanner.maven</pluginGroup>
-    </pluginGroups>
-    <profiles>
-        <profile>
-            <id>sonar</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-        </profile>
-     </profiles>
-</settings>
+<servers>
+  <server>
+    <id>releases</id>
+    <username>admin</username>
+    <password>Ready2go@197</password>
+  </server>
+  <server>
+    <id>snapshots</id>
+    <username>admin</username>
+    <password>Ready2go@197</password>
+  </server>
+</servers>
